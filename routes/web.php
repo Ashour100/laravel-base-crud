@@ -13,4 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/','ComicController');
+Route::resource('/comics','ComicController');
+// Route::prefix('comics')->comics->group(function(){
+//     Route::get
+// })
