@@ -1,34 +1,22 @@
 @extends('layouts.base')
 
-@section('title', 'Comics')
-
+@section('title','Comics')
 @section('main-content')
-<main>
-    <div class="container-fluid">
-        <div class="row w-100">
-            <div class="col-12 m-3 p-5">
-                <h1 class="text-center">Comics </h1>
+<div class="comics position-relative text-center pb-3">
+    <img class="w-100 jumbo" src="{{asset('images/jumbotron.jpg')}}" alt="">
+    <div class="px-3 py-2 bg-primary title fw-bold fs-5">CURRENT SERIES</div>
+    <div class="contentContainer mx-auto d-flex flex-wrap gap-4 my-5">
+        @foreach ($comics as $key=> $comic)
+        <a href="comics/{{$key+1}}">
+            <div class="icon text-start">
+                <img class="w-100 mb-2" src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                <span class="text-uppercase">{{$comic['series']}}</span>
             </div>
-            {{-- @foreach ($trains as $train)
-                <div class="col-4">
-                    <div class="card p-3 m-2">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                Treno da {{ $train->Stazione_di_partenza}}, a {{ $train->Stazione_di_arrivo }}
-                            </h5>
-                            <p class="card-text">
-                                Azienda: {{ $train->Azienda }} <br>
-                                Numero Carrozza: {{$train->Numero_carrozze}} <br>
-                                Orario di partenza: {{ $train->Orario_di_partenza }} <br>
-                                Orario di arrivo: {{ $train->Orario_di_arrivo }} <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            @endforeach --}}
-        </div>
+        </a>
+        @endforeach
     </div>
+    <button class="border-0 text-white bg-primary px-5 py-2 fw-bolder" id="load">LOAD MORE</button>
+</div>
 
-</main>
 @endsection
 

@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('/comics','ComicController');
 // Route::prefix('comics')->comics->group(function(){
-//     Route::get
-// })
+//     Route::get('','ComicController@index')->name('comics');
+// });
