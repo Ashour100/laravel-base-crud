@@ -1,1 +1,82 @@
-//
+@import 'partials/variables';
+@import 'partials/common';
+@import'~bootstrap/scss/bootstrap';
+
+
+// Single comic Page
+.upper-comic-section{
+    position: relative;
+    .blueBar{
+        height: 10vh;
+        background-color: $primary;
+    }
+    .thumb{
+        width: 150px;
+        position: absolute;
+        left: 20rem;
+        bottom: 1rem;
+        border: 1px solid white;
+    }
+}
+.mid-comic-section{
+    width: 54vw;
+    h4{
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #264667;
+    }
+    .left{
+        width: 70%;
+        p{
+            font-size: .8rem;
+        }
+        .greenBar{
+            font-size: .78rem;
+            font-weight: 500;
+            background-color: #55ba59;
+            .right{
+                border-left: 1px solid black;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .right{
+        width: 28%;
+        img{
+            width: 100%;
+        }
+
+    }
+}
+
+.bottom-comic-section{
+    background-color: #f6f6f6;
+    .contentWrapper{
+        width: 54vw;
+        h5{
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #264667;
+        }
+        span{
+            font-size: small;
+        }
+        hr{
+            margin:.3rem 0;
+        }
+        .tag{
+            width: 25%;
+        }
+        .details{
+            width: 70%;
+            font-size: small;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+}

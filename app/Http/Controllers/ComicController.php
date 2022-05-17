@@ -14,7 +14,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        return view('comics.comics');
+        return view('comics.index');
     }
 
     /**
@@ -45,7 +45,7 @@ class ComicController extends Controller
         $newComic->sale_date=$newInfo['sale_date'];
         $newComic->type=$newInfo['type'];
         $newComic->save();
-        return redirect()->route('index');
+        return redirect()->route('comics.show', $newComic);
     }
 
     /**
@@ -56,7 +56,7 @@ class ComicController extends Controller
      */
     public function show(comic $comic)
     {
-        //
+        return view('comics.show', ["comic" => $comic] );
     }
 
     /**
