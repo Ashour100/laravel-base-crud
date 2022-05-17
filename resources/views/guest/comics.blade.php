@@ -1,15 +1,15 @@
 @extends('layouts.base')
 
-@section('title', 'Trains')
+@section('title', 'Comics')
 
 @section('main-content')
 <main>
     <div class="container-fluid">
         <div class="row w-100">
             <div class="col-12 m-3 p-5">
-                <h1 class="text-center">Treni disponibili attualmente </h1>
+                <h1 class="text-center">Comics </h1>
             </div>
-            @foreach ($trains as $train)
+            {{-- @foreach ($trains as $train)
                 <div class="col-4">
                     <div class="card p-3 m-2">
                         <div class="card-body">
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-            @endforeach
+            @endforeach --}}
         </div>
     </div>
 
