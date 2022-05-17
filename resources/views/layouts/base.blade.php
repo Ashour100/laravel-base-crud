@@ -11,10 +11,10 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    {{-- @include('partials.header') --}}
+    @include('partials.header')
     <main>
         @yield('main-content')
     </main>
-    {{-- @include('partials.footer') --}}
+    @include('partials.footer')
 </body>
 </html>

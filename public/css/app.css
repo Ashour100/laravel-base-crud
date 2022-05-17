@@ -11255,6 +11255,62 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  height: 13vh;
+}
+.header .contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-logo img {
+  width: 65%;
+}
+
+.header-nav {
+  height: 100%;
+}
+.header-nav ul {
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+.header-nav ul li {
+  list-style: none;
+  padding: 0 0.7rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-nav ul li a {
+  text-decoration: none;
+  color: #303030;
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+
+.active {
+  border-bottom: 5px solid #0282f9;
+}
+.active a {
+  color: #0282f9 !important;
+  margin-bottom: -5px;
+}
+
+.jumbo {
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 .upper-comic-section {
   position: relative;
 }
@@ -11272,6 +11328,7 @@ textarea.form-control-lg {
 
 .mid-comic-section {
   width: 54vw;
+  margin-bottom: 20vh;
 }
 .mid-comic-section h4, .mid-comic-section .h4 {
   font-weight: bold;
@@ -11329,4 +11386,115 @@ textarea.form-control-lg {
 }
 .bottom-comic-section .contentWrapper .details a {
   text-decoration: none;
+}
+
+.comics {
+  background-color: #1c1c1c;
+  color: white;
+  margin: 0;
+}
+.comics .title {
+  position: absolute;
+  top: 18.7rem;
+  left: 10.8rem;
+}
+.comics a {
+  width: calc(16.6666666667% - 1.3rem);
+  text-decoration: none;
+}
+.comics a .icon {
+  flex-direction: column;
+  color: white;
+}
+.comics a .icon img {
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.comics a .icon span {
+  font-size: small;
+}
+
+.FooterTop {
+  height: 18vh;
+  background-color: #0282f9;
+}
+.FooterTop .contentContainer {
+  padding: 0 5rem;
+}
+.FooterTop .icon {
+  gap: 1rem;
+  cursor: pointer;
+}
+.FooterTop .icon #locator {
+  width: 1.5rem;
+}
+.FooterTop .icon img {
+  width: 2.27rem;
+}
+.FooterTop .icon span {
+  color: white;
+  font-size: 0.71rem;
+}
+
+.FooterMiddle {
+  height: 40vh;
+  background-image: url("/images/footer-bg.jpg");
+}
+.FooterMiddle .left {
+  color: white;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 20vw;
+  text-align: start;
+  padding-top: 2rem;
+}
+.FooterMiddle .left h5, .FooterMiddle .left .h5 {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.FooterMiddle .left ul {
+  padding-left: 0;
+  margin-bottom: 0.1rem;
+  font-size: 0.6rem;
+  color: gray;
+}
+.FooterMiddle .left li {
+  list-style: none;
+  cursor: pointer;
+}
+.FooterMiddle .left .shop-list {
+  position: relative;
+  bottom: 3rem;
+}
+.FooterMiddle .right {
+  display: none;
+}
+
+.FooterBottom {
+  height: 13vh;
+  background-color: #303030;
+}
+.FooterBottom button {
+  background-color: #303030;
+  color: white;
+  border: 2px solid #0282f9;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.FooterBottom .socials {
+  gap: 1rem;
+}
+.FooterBottom .socials img {
+  width: 1.8rem;
+  cursor: pointer;
+}
+.FooterBottom .socials h3, .FooterBottom .socials .h3 {
+  color: #0282f9;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
 }
