@@ -28,5 +28,76 @@
         <a href=""><img src="{{asset('images/addddddd.jpg')}}" alt="Ad"></a>
     </div>
 </div>
+<div class="bottom-comic-section mt-5 pb-2">
+    <div class="contentWrapper mx-auto pt-4 pb-5">
+        {{-- <div class="left w-50">
+            <h5>Talent</h5>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span>Art by:</span>
+                </div>
+                <div class="details">
+                    <span>
+                        @foreach ($comic['artists'] as $name)
+                        <a href="#">{{$name}}</a>
+                        @if (!$loop->last)
+                        ,
+                        @endif
+                        @endforeach
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span>Written by:</span>
+                </div>
+                <div class="details">
+                    <span>
+                        @foreach ($comic['writers'] as $name)
+                        <a href="#">{{$name}}</a>
+                        @if (!$loop->last)
+                        ,
+                        @endif
+                        @endforeach
+                    </span>
+                </div>
+            </div>
+            <hr>
+        </div> --}}
+        <div class="right w-75 mx-auto text-center">
+            <h5 class="text-center">Specs</h5>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span>Series:</span>
+                </div>
+                <div class="details">
+                    <a href="" class="text-uppercase">{{$comic->series}}</a>
+                </div>
+            </div>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span> U.S. Price:</span>
+                </div>
+                <div class="details">
+                    <span>{{$comic->price}} &euro;</span>
+                </div>
+            </div>
+            <hr>
+            <div class="block d-flex justify-content-between align-items-center">
+                <div class="tag">
+                    <span>On Sale Date:</span>
+                </div>
+                <div class="details">
+                    <span>{{$comic->sale_date}}</span>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
 
 @endsection

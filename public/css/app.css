@@ -11328,7 +11328,6 @@ textarea.form-control-lg {
 
 .mid-comic-section {
   width: 54vw;
-  margin-bottom: 20vh;
 }
 .mid-comic-section h4, .mid-comic-section .h4 {
   font-weight: bold;
@@ -11378,10 +11377,10 @@ textarea.form-control-lg {
   margin: 0.3rem 0;
 }
 .bottom-comic-section .contentWrapper .tag {
-  width: 25%;
+  width: 50%;
 }
 .bottom-comic-section .contentWrapper .details {
-  width: 70%;
+  width: 50%;
   font-size: small;
 }
 .bottom-comic-section .contentWrapper .details a {
